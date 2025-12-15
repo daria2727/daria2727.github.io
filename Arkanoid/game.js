@@ -72,7 +72,7 @@ let game = {
     },
     preloadAudio(onResourceLoad) {
         for (let key in this.sounds) {
-            this.sounds[key] = new Audio("sounds/" + key + ".mp3");
+            this.sounds[key] = new Audio("Sounds/" + key + ".mp3");
             this.sounds[key].addEventListener("canplaythrough", onResourceLoad, {once : true});
         }
     },
